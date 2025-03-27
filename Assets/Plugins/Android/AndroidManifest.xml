@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools">
+
+		<!-- 터치스크린 필수 사용. -->
+		<uses-feature android:name="android.hardware.touchscreen" android:required="true"/>
+
+		<!-- TV, 워치 등은 제외. -->
+		<uses-feature android:name="android.software.leanback" android:required="false"/>
+		<uses-feature android:name="android.hardware.type.television" android:required="false"/>
+		<!-- <uses-feature android:name="android.hardware.type.watch" android:required="false"/> -->
+	
+		<application>
+				<activity android:name="com.unity3d.player.UnityPlayerActivity"
+									android:theme="@style/UnityThemeSelector">
+						<intent-filter>
+								<action android:name="android.intent.action.MAIN" />
+								<category android:name="android.intent.category.LAUNCHER" />
+						</intent-filter>
+						<meta-data android:name="unityplayer.UnityActivity" android:value="true" />
+				</activity>
+		</application>
+</manifest>
