@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Crockhead.Core</id>
+    <version>0.0.16</version>
+    <title>Crockhead.Core</title>
+    <authors>ddukbaek2</authors>
+    <license type="file">LICENSE</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/ddukbaek2/Crockhead.Core</projectUrl>
+    <description>Lightweight C# base library providing structured and reusable core components. Targets .NET Standard 2.1 with no external dependencies.</description>
+    <tags>core utility base</tags>
+    <repository type="git" url="https://github.com/ddukbaek2/Crockhead.Core.git" commit="a9642223407c01dd44ac2709535ae09f04040881" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.1" />
+    </dependencies>
+  </metadata>
+</package>
