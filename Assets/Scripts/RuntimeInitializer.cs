@@ -9,6 +9,6 @@ public static class RuntimeInitializer
 	[RuntimeInitializeOnLoadMethod]
 	public static void Initialize()
 	{
-		Debug.Log("[SimpleTycoon] Initialize()");
+		Debug.Log($"[SimpleTycoon] Initialize(): Application.version={Application.version}");
 	}
 }
