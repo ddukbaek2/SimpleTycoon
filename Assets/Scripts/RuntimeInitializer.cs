@@ -1,18 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class RuntimeInitializer : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+/// <summary>
+/// 런타임 이니셜라이저.
+/// </summary>
+public static class RuntimeInitializer
+{
+	[RuntimeInitializeOnLoadMethod]
+	public static void Initialize()
+	{
+		Debug.Log("[SimpleTycoon] Initialize()");
+	}
 }
